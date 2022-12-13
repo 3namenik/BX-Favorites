@@ -124,3 +124,7 @@ class Wishlist{
 }
 
 /* end class Wishlist */
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.wishlist = new Wishlist();
+});
