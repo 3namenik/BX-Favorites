@@ -7,7 +7,7 @@ $APPLICATION->SetTitle("Избранные товары");?>
 <?
 /* Параметры за исключением FILTER_NAME меняются и указываются в зависимости от проекта */
 global $favoritesFilter;
-$favoritesFilter['ID'] = Favorites::get();
+$favoritesFilter['ID'] = Wishlist::get();
 
 if (!empty($favoritesFilter['ID'])) {	
 	$APPLICATION->IncludeComponent(
