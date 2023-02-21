@@ -19,6 +19,12 @@ class Wishlist
         if ($favorites_list == null) {
             return [];
         } else {
+            /* на случай, если попал пустой пункт */
+            foreach ($favorites_list as $key => $fav) {
+                if (empty($fav)) {
+                    unset($favorites_list[$key]);
+                }
+            }
             return $favorites_list;
         }
     }
